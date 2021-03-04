@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-condensed.css" />
+    <link rel="stylesheet" type="text/css" href="css/personal-info-filled-out.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway:900,600,400,500,700,300|Londrina+Solid:400");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(248, 248, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="personal-info-filled-out" />
+    <div class="container-center-horizontal">
+      <div class="personal-info-filled-out screen">
+        <div class="system-header-with-header-C61RwL">
+          <div class="header-Ma42xY">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-VdxkZe" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1456-VdxkZe">
+              <a href="view-cart.html">
+                <div class="icon-cart-w-badge-pNe5tj">
+                  <div class="group-1462-jwfCD7">
+                    <div class="cart-GzNxBq">
+                      <div class="layer-33-PAkmb8">
+                        <img class="vector-P4Wcuk" src="img/vector-73@2x.svg" />
+                        <img class="vector-bSH92j" src="img/vector-72@2x.svg" />
+                      </div>
+                      <div class="group-1435-PAkmb8">
+                        <img class="ellipse-5-Z9K9Zx" src="img/ellipse-5-13@2x.svg" />
+                        <div class="x0-i3761067337683832791809-Z9K9Zx valign-text-middle raleway-medium-black-14px">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="javascript:ShowOverlay('hamburger-condensed', 'animate-appear');">
+                <div class="hamurger-menu-pNe5tj"><img class="union-Vl0mgO" src="img/union-6@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-group-C61RwL">
+          <img class="coffeering-4-4eduM0" src="img/coffeering-4-1@2x.svg" />
+          <div class="frame-1481-4eduM0">
+            <div class="frame-1486-3wItIJ">
+              <div class="checkout-7LWbcG raleway-bold-black-22px">CHECKOUT</div>
+              <div class="frame-1526-7LWbcG">
+                <div class="frame-1488-uZifTr">
+                  <img class="vector-rAfoyk" src="img/vector-6@2x.svg" />
+                  <div class="back-rAfoyk raleway-semi-bold-eerie-black-14px">Back</div>
+                </div>
+                <div class="bean-counter1-uZifTr">
+                  <img class="vector-dxXrRE" src="img/vector-40@2x.svg" />
+                  <img class="vector-aH8Dut" src="img/vector-41@2x.svg" />
+                  <img class="vector-tNx0yp" src="img/vector-41@2x.svg" />
+                  <img class="vector-LnO4fx" src="img/vector-41@2x.svg" />
+                  <img class="vector-ZOKHDL" src="img/vector-41@2x.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="payment-method-3wItIJ raleway-bold-black-20px">Payment Method</div>
+            <div class="frame-1484-3wItIJ">
+              <div class="x-10QeI5 raleway-black-crimson-20px">*</div>
+              <div class="indicates-required-fields-10QeI5 raleway-normal-eerie-black-16px">
+                indicates required fields
+              </div>
+            </div>
+            <div class="frame-1487-3wItIJ">
+              <div class="frame-1484-JBGInR">
+                <div class="name-huLB9K raleway-normal-eerie-black-20px">Name</div>
+                <div class="x-huLB9K raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-JBGInR">
+                <div class="john-doe-2Vjb2O raleway-normal-eerie-black-16px">John Doe</div>
+              </div>
+            </div>
+            <div class="frame-1488-3wItIJ">
+              <div class="frame-1484-FlxVC1">
+                <div class="email-5Cx1lL raleway-normal-eerie-black-20px">Email</div>
+                <div class="x-5Cx1lL raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-FlxVC1">
+                <div class="johndoe-a-tgmail-do-tcom-rV1chx valign-text-middle raleway-normal-eerie-black-16px">
+                  johndoeATgmailDOTcom
+                </div>
+              </div>
+            </div>
+            <div class="frame-1489-3wItIJ">
+              <div class="frame-1484-LPMTDL">
+                <div class="phone-iskJIT raleway-normal-eerie-black-20px">Phone</div>
+                <div class="x-iskJIT raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-LPMTDL">
+                <div class="x3035555555-hNvTYQ raleway-normal-eerie-black-16px">303.555.5555</div>
+              </div>
+            </div>
+            <div class="duel-buttonsdefault-3wItIJ">
+              <a href="view-cart.html"><img class="buttondefault-azkzLd" src="img/button-default@2x.svg" /></a>
+              <a href="pickup-fullfillment.html"
+                ><img class="buttondefault-6wgVMQ" src="img/button-default-1@2x.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-4eduM0">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-tybepC" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1460-tybepC">
+              <div class="icon-venmo-Xtn5mg">
+                <div class="group-YIkBJx"></div>
+              </div>
+              <div class="icon-instagram-Xtn5mg"><img class="vector-ScOadP" src="img/vector-1@2x.svg" /></div>
+              <div class="icon-cart-w-badge-Xtn5mg">
+                <div class="cart-OlUD7F">
+                  <div class="layer-33-OYjM4x">
+                    <img class="vector-zvnXLK" src="img/vector-3@2x.svg" />
+                    <img class="vector-y8wxUH" src="img/vector-2@2x.svg" />
+                  </div>
+                  <div class="group-1435-OYjM4x">
+                    <img class="ellipse-5-rVfCmG" src="img/ellipse-5-8@2x.svg" />
+                    <div class="x1-i376106722791898-rVfCmG valign-text-middle raleway-medium-black-14px">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-hamburger-condensed" class="overlay" style="min-height: 705px">
+      <div class="container-center-horizontal">
+        <div class="hamburger-condensed screen">
+          <div class="frame-1535-C61RwL"><img class="menu-rDMiKW" src="img/menu@2x.svg" /></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-hamburger-condensed";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("hamburger-condensed", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

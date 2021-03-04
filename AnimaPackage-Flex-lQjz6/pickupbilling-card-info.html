@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/pickupbilling-card-info.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-condensed.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway:900,600,400,500,700,300|Londrina+Solid:400");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(248, 248, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="pickupbilling-card-info" />
+    <div class="container-center-horizontal">
+      <div class="pickupbilling-card-info screen">
+        <div class="system-header-with-header-C61RwL">
+          <div class="header-Ma42xY">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-VdxkZe" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1456-VdxkZe">
+              <a href="view-cart.html">
+                <div class="icon-cart-w-badge-pNe5tj">
+                  <div class="group-1462-jwfCD7">
+                    <div class="cart-GzNxBq">
+                      <div class="layer-33-PAkmb8">
+                        <img class="vector-P4Wcuk" src="img/vector-73@2x.svg" />
+                        <img class="vector-bSH92j" src="img/vector-72@2x.svg" />
+                      </div>
+                      <div class="group-1435-PAkmb8">
+                        <img class="ellipse-5-Z9K9Zx" src="img/ellipse-5-13@2x.svg" />
+                        <div class="x0-i3761108937683832791809-Z9K9Zx valign-text-middle raleway-medium-black-14px">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="javascript:ShowOverlay('hamburger-condensed', 'animate-appear');">
+                <div class="hamurger-menu-pNe5tj"><img class="union-Vl0mgO" src="img/union-6@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-group-C61RwL">
+          <img class="coffeering-4-4eduM0" src="img/coffeering-4-1@2x.svg" />
+          <div class="frame-1481-4eduM0">
+            <div class="frame-1506-3wItIJ">
+              <div class="checkout-HsruJT raleway-bold-black-22px">CHECKOUT</div>
+              <div class="frame-1526-HsruJT">
+                <a href="pickup-fullfillment.html">
+                  <div class="frame-1488-KVTFIW">
+                    <img class="vector-Nx6bsv" src="img/vector-6@2x.svg" />
+                    <div class="back-Nx6bsv raleway-semi-bold-eerie-black-14px">Back</div>
+                  </div></a
+                >
+                <div class="bean-counter3-KVTFIW">
+                  <img class="vector-P65w5o" src="img/vector-102@2x.svg" />
+                  <img class="vector-04s71K" src="img/vector-102@2x.svg" />
+                  <img class="vector-wSX4ET" src="img/vector-102@2x.svg" />
+                  <img class="vector-wm85zk" src="img/vector-41@2x.svg" />
+                  <img class="vector-GEZTTZ" src="img/vector-41@2x.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="payment-method-3wItIJ raleway-bold-black-20px">Payment Method</div>
+            <div class="you-can-scan-ou-edit-card-below-3wItIJ raleway-normal-eerie-black-20px">
+              You can scan our Venmo QR code or use a credit card below.
+            </div>
+            <div class="frame-1507-3wItIJ">
+              <img class="roastyvenmo-code-1-m9wcUB" src="img/roastyvenmo-code-1@2x.svg" />
+            </div>
+            <div class="frame-1505-3wItIJ"><img class="line-20-y4qx98" src="img/line-20-1@2x.svg" /></div>
+            <div class="billing-information-3wItIJ raleway-bold-black-20px">Billing Information</div>
+            <div class="frame-1484-3wItIJ">
+              <div class="x-10QeI5 raleway-black-crimson-20px">*</div>
+              <div class="indicates-required-fields-10QeI5 raleway-normal-eerie-black-16px">
+                indicates required fields
+              </div>
+            </div>
+            <div class="frame-1485-3wItIJ">
+              <div class="frame-1484-Bf5pim">
+                <div class="address-line-1-6j6IwQ raleway-normal-eerie-black-20px">Address Line 1</div>
+                <div class="x-6j6IwQ raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-Bf5pim">
+                <div class="x123-your-street-way-7dj9Vd raleway-normal-eerie-black-16px">123 Your Street Way</div>
+              </div>
+            </div>
+            <div class="frame-1483-3wItIJ">
+              <div class="frame-1484-xxkUNt">
+                <div class="address-line-2-IdlSLw raleway-normal-eerie-black-20px">Address Line 2</div>
+              </div>
+              <div class="frame-1481-xxkUNt"></div>
+            </div>
+            <div class="frame-1484-2UkCxo">
+              <div class="field-3-by-HLRkKi">
+                <div class="frame-1484-cefRf5">
+                  <div class="city-EDwJy8 raleway-normal-eerie-black-20px">City</div>
+                  <div class="x-EDwJy8 raleway-black-crimson-20px">*</div>
+                </div>
+                <div class="frame-1481-cefRf5">
+                  <div class="denver-Wp4rL2 raleway-normal-eerie-black-16px">Denver</div>
+                </div>
+              </div>
+              <div class="field-3-by-AHxuuS">
+                <div class="frame-1484-ahrq7r">
+                  <div class="state-9vbzmg raleway-normal-eerie-black-20px">State</div>
+                  <div class="x-9vbzmg">*</div>
+                </div>
+                <div class="frame-1481-ahrq7r"><div class="co-caqiSs raleway-normal-eerie-black-16px">CO</div></div>
+              </div>
+              <div class="field-3-by-3fLX9h">
+                <div class="frame-1484-poXn3j">
+                  <div class="zip-1TxY69 raleway-normal-eerie-black-20px">Zip</div>
+                  <div class="x-1TxY69 raleway-black-crimson-20px">*</div>
+                </div>
+                <div class="frame-1481-poXn3j">
+                  <div class="x81223-Nu74xg raleway-normal-eerie-black-16px">81223</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-1482-3wItIJ">
+              <div class="frame-1484-UCYn6g">
+                <div class="card-information-ZsPnws raleway-normal-eerie-black-20px">Card Information</div>
+                <div class="x-ZsPnws raleway-black-crimson-20px">*</div>
+              </div>
+            </div>
+            <div class="frame-1486-3wItIJ">
+              <div class="frame-1484-7LWbcG">
+                <div class="name-as-it-appe-rs-on-your-card-AHtwU1 raleway-normal-eerie-black-20px">
+                  Name as it appears on your card
+                </div>
+                <div class="x-AHtwU1 raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-7LWbcG">
+                <div class="john-doe-O00o2m raleway-normal-eerie-black-16px">John Doe</div>
+              </div>
+            </div>
+            <div class="frame-1487-3wItIJ">
+              <div class="frame-1484-JBGInR">
+                <div class="credit-card-number-huLB9K raleway-normal-eerie-black-20px">Credit Card Number</div>
+                <div class="x-huLB9K raleway-black-crimson-20px">*</div>
+              </div>
+              <div class="frame-1481-JBGInR">
+                <div class="x-5280-2Vjb2O raleway-normal-eerie-black-16px">####-####-####-5280</div>
+              </div>
+            </div>
+            <div class="frame-1491-3wItIJ">
+              <div class="field-3-by-ZI9SzD">
+                <div class="frame-1484-TiFp1R">
+                  <div class="exp-date-Vmy1sk raleway-normal-eerie-black-20px">Exp. Date</div>
+                  <div class="x-Vmy1sk raleway-black-crimson-20px">*</div>
+                </div>
+                <div class="frame-1481-TiFp1R">
+                  <div class="x0825-jZjZEF raleway-normal-eerie-black-16px">08/25</div>
+                </div>
+              </div>
+              <div class="field-3-by-oBjAvl">
+                <div class="frame-1484-PPw9vP">
+                  <div class="ccv-f49DCe raleway-normal-eerie-black-20px">CCV</div>
+                  <div class="x-f49DCe raleway-black-crimson-20px">*</div>
+                </div>
+                <div class="frame-1481-PPw9vP"><div class="x123-CLG6qM raleway-normal-eerie-black-16px">123</div></div>
+              </div>
+            </div>
+            <div class="duel-buttonsdefault-3wItIJ">
+              <a href="pickup-fullfillment.html"
+                ><img class="buttondefault-azkzLd" src="img/button-default@2x.svg"
+              /></a>
+              <a href="checkout-review.html"><img class="buttondefault-6wgVMQ" src="img/button-default-1@2x.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-C61RwL">
+          <a href="home.html"
+            ><img class="roasty-brand-ho-kup-nopadding-1-iPe1yZ" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+          /></a>
+          <div class="frame-1460-iPe1yZ">
+            <div class="icon-venmo-M6YXpf">
+              <div class="group-nkO7wM"></div>
+            </div>
+            <div class="icon-instagram-M6YXpf"><img class="vector-vldh39" src="img/vector-1@2x.svg" /></div>
+            <div class="icon-cart-w-badge-M6YXpf">
+              <div class="cart-fxoTGM">
+                <div class="layer-33-oGP2bB">
+                  <img class="vector-BHrGN0" src="img/vector-3@2x.svg" />
+                  <img class="vector-XYf3pI" src="img/vector-10@2x.svg" />
+                </div>
+                <div class="group-1435-oGP2bB">
+                  <img class="ellipse-5-aCtXLx" src="img/ellipse-5-33@2x.svg" />
+                  <div class="x1-i376133122791898-aCtXLx valign-text-middle raleway-medium-black-14px">2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-hamburger-condensed" class="overlay" style="min-height: 1408px">
+      <div class="container-center-horizontal">
+        <div class="hamburger-condensed screen">
+          <div class="frame-1535-C61RwL"><img class="menu-rDMiKW" src="img/menu@2x.svg" /></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-hamburger-condensed";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("hamburger-condensed", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
