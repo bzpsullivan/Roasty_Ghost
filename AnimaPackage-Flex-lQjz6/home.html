@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-condensed.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway:900,600,400,500,700,300|Londrina+Solid:400");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="home" />
+    <div class="container-center-horizontal">
+      <div class="home screen">
+        <div class="system-header-with-header-C61RwL">
+          <div class="header-Ma42xY">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-VdxkZe" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1456-VdxkZe">
+              <a href="view-cart.html">
+                <div class="icon-cart-w-badge-pNe5tj">
+                  <div class="group-1462-jwfCD7">
+                    <div class="cart-GzNxBq">
+                      <div class="layer-33-PAkmb8">
+                        <img class="vector-P4Wcuk" src="img/vector-27@2x.svg" />
+                        <img class="vector-bSH92j" src="img/vector-26@2x.svg" />
+                      </div>
+                      <div class="group-1435-PAkmb8">
+                        <img class="ellipse-5-Z9K9Zx" src="img/ellipse-5-3@2x.svg" />
+                        <div class="x0-i50510737683832791809-Z9K9Zx valign-text-middle raleway-medium-black-14px">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="javascript:ShowOverlay('hamburger-condensed', 'animate-appear');">
+                <div class="hamurger-menu-pNe5tj"><img class="union-Vl0mgO" src="img/union@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-group-C61RwL">
+          <img class="coffeering-2-4eduM0" src="img/coffeering-2@2x.svg" />
+          <div class="footer-4eduM0">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-tybepC" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1460-tybepC">
+              <div class="icon-venmo-Xtn5mg">
+                <div class="group-YIkBJx"></div>
+              </div>
+              <div class="icon-instagram-Xtn5mg"><img class="vector-ScOadP" src="img/vector-1@2x.svg" /></div>
+              <div class="icon-cart-w-badge-Xtn5mg">
+                <div class="cart-OlUD7F">
+                  <div class="layer-33-OYjM4x">
+                    <img class="vector-zvnXLK" src="img/vector-3@2x.svg" />
+                    <img class="vector-y8wxUH" src="img/vector-2@2x.svg" />
+                  </div>
+                  <div class="group-1435-OYjM4x">
+                    <img class="ellipse-5-rVfCmG" src="img/ellipse-5@2x.svg" />
+                    <div class="x1-i505632791898-rVfCmG valign-text-middle raleway-medium-black-14px">1</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-1486-4eduM0">
+            <div class="hero-DMbt8L">
+              <div class="frame-1489-w12P5b">
+                <img class="vector-NuXuSI" src="img/vector-4@2x.svg" />
+                <div class="frame-1532-NuXuSI">
+                  <div class="mongolian-cold-i5831287250598-SW9pdQ">Mongolian Cold Brew</div>
+                  <div class="group-16-SW9pdQ">
+                    <img class="ellipse-2-wfZ7F4" src="img/ellipse-2@2x.svg" />
+                    <img class="ellipse-3-wfZ7F4" src="img/ellipse-3@2x.svg" />
+                    <img class="ellipse-4-wfZ7F4" src="img/ellipse-3@2x.svg" />
+                  </div>
+                </div>
+                <img class="vector-Aiyvww" src="img/vector-5@2x.svg" />
+              </div>
+            </div>
+            <div class="duel-buttons-DMbt8L">
+              <div class="buttondefault-ceE0vj">
+                <div class="frame-1484-OxO3ri">
+                  <img class="cold-brewed-coffeedscf9691-2-4kyiiO" src="img/cold-brewed-coffee-dscf9691-2@2x.svg" />
+                </div>
+                <div class="buy-cold-brew-OxO3ri">Buy Cold Brew</div>
+              </div>
+              <div class="buttondefault-FVj65t">
+                <div class="frame-1484-oC2MJJ">
+                  <img
+                    class="roasty-bean-bag-transparentbg-2-2flVQ1"
+                    src="img/roasty-bean-bag-transparentbg-2@2x.svg"
+                  />
+                </div>
+                <div class="buy-beans-oC2MJJ">Buy Beans</div>
+              </div>
+            </div>
+            <img class="line-19-DMbt8L" src="img/line-19@2x.svg" />
+            <div class="current-roasts-DMbt8L">CURRENT ROASTS</div>
+            <div class="frame-1489-DMbt8L">
+              <div class="frame-1489-K8QvTZ">
+                <div class="frame-1489-1vkxJg">
+                  <div class="frame-1484-wxfbPm">
+                    <img
+                      class="roasty-bean-bag-transparentbg-2-ApajFp"
+                      src="img/roasty-bean-bag-transparentbg-2-1@2x.svg"
+                    />
+                  </div>
+                  <div class="lorem-ipsum-dol-eiusmod-tempor-wxfbPm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  </div>
+                </div>
+                <div class="incididunt-ut-l-mmodo-consequat-1vkxJg">
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <img class="line-20-DMbt8L" src="img/line-19@2x.svg" />
+            <div class="current-cold-brews-DMbt8L">CURRENT COLD BREWS</div>
+            <div class="frame-1490-DMbt8L">
+              <div class="frame-1489-nejwSp">
+                <div class="frame-1489-Hx8WkC">
+                  <div class="lorem-ipsum-dol-mpor-incididunt-0hweZV">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  </div>
+                  <img class="cold-brewed-coffeedscf9691-2-0hweZV" src="img/cold-brewed-coffee-dscf9691-2-1@2x.svg" />
+                </div>
+                <div class="ut-labore-et-do-mmodo-consequat-Hx8WkC">
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <img class="line-17-DMbt8L" src="img/line-19@2x.svg" />
+            <div class="whats-a-cold-spot-DMbt8L">WHAT’S A COLD SPOT?</div>
+            <img class="map-DMbt8L" src="img/map@2x.svg" />
+            <div class="lorem-ipsum-dol-mmodo-consequat-DMbt8L">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+            <img class="line-18-DMbt8L" src="img/line-19@2x.svg" />
+            <div class="mission-statement-DMbt8L">MISSION STATEMENT</div>
+            <div class="lorem-ipsum-dol-re-magna-aliqua-DMbt8L">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+        <div class="footer-C61RwL">
+          <a href="home.html"
+            ><img class="roasty-brand-ho-kup-nopadding-1-iPe1yZ" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+          /></a>
+          <div class="frame-1460-iPe1yZ">
+            <div class="icon-venmo-M6YXpf">
+              <div class="group-nkO7wM"></div>
+            </div>
+            <div class="icon-instagram-M6YXpf"><img class="vector-vldh39" src="img/vector-1@2x.svg" /></div>
+            <div class="icon-cart-w-badge-M6YXpf">
+              <div class="cart-fxoTGM">
+                <div class="layer-33-oGP2bB">
+                  <img class="vector-BHrGN0" src="img/vector-3@2x.svg" />
+                  <img class="vector-XYf3pI" src="img/vector-2@2x.svg" />
+                </div>
+                <div class="group-1435-oGP2bB">
+                  <img class="ellipse-5-aCtXLx" src="img/ellipse-5@2x.svg" />
+                  <div class="x1-i5051692791898-aCtXLx valign-text-middle raleway-medium-black-14px">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-hamburger-condensed" class="overlay" style="min-height: 1693px">
+      <div class="container-center-horizontal">
+        <div class="hamburger-condensed screen">
+          <div class="frame-1535-C61RwL"><img class="menu-rDMiKW" src="img/menu@2x.svg" /></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-hamburger-condensed";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("hamburger-condensed", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

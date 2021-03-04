@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-condensed.css" />
+    <link rel="stylesheet" type="text/css" href="css/view-cart.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway:900,600,400,500,700,300|Londrina+Solid:400");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(248, 248, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="view-cart" />
+    <div class="container-center-horizontal">
+      <div class="view-cart screen">
+        <div class="system-header-with-header-C61RwL">
+          <div class="header-Ma42xY">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-VdxkZe" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1456-VdxkZe">
+              <a href="view-cart.html">
+                <div class="icon-cart-w-badge-pNe5tj">
+                  <div class="group-1462-jwfCD7">
+                    <div class="cart-GzNxBq">
+                      <div class="layer-33-PAkmb8">
+                        <img class="vector-P4Wcuk" src="img/vector-73@2x.svg" />
+                        <img class="vector-bSH92j" src="img/vector-72@2x.svg" />
+                      </div>
+                      <div class="group-1435-PAkmb8">
+                        <img class="ellipse-5-Z9K9Zx" src="img/ellipse-5-13@2x.svg" />
+                        <div class="x0-i53429037683832791809-Z9K9Zx valign-text-middle raleway-medium-black-14px">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="javascript:ShowOverlay('hamburger-condensed', 'animate-appear');">
+                <div class="hamurger-menu-pNe5tj"><img class="union-Vl0mgO" src="img/union-6@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-group-C61RwL">
+          <img class="coffeering-4-4eduM0" src="img/coffeering-4@2x.svg" />
+          <img class="coffeering-5-4eduM0" src="img/coffeering-5@2x.svg" />
+          <div class="frame-1481-4eduM0">
+            <div class="view-cart-3wItIJ raleway-bold-black-22px">VIEW CART</div>
+            <div class="frame-1526-3wItIJ">
+              <a href="javascript:history.back()">
+                <div class="frame-1488-31qk3j">
+                  <img class="vector-d85xtt" src="img/vector-6@2x.svg" />
+                  <div class="back-d85xtt raleway-semi-bold-eerie-black-14px">Back</div>
+                </div></a
+              >
+              <div class="cart-items-31qk3j valign-text-middle raleway-bold-black-22px">Cart Items</div>
+            </div>
+            <div class="view-cart-productbean-3wItIJ border-1-5px-ghost">
+              <div class="frame-1474-F044ji">
+                <div class="columbian-blend-s-i534551534467-LdGSr9 raleway-bold-black-22px">
+                  Columbian Blend<br />Roast Beans
+                </div>
+                <div class="frame-1474-LdGSr9">
+                  <div class="x2067-i534551534469-Q5yqLu raleway-light-black-18px">$20.67</div>
+                  <div class="x12-oz-bag-i534551534470-Q5yqLu raleway-light-black-16px">12oz. Bag</div>
+                  <div class="text-i534551534471-Q5yqLu"></div>
+                </div>
+              </div>
+              <a href="catalog-page-product-information-beans.html">
+                <div class="frame-1496-F044ji">
+                  <a href="catalog-page-product-information-beans.html" onclick="window.event.stopPropagation()"
+                    ><img class="frame-1496-jkhFVU" src="img/frame-1496@2x.svg"
+                  /></a>
+                  <img
+                    class="roasty-bean-bag-transparentbg-1-jkhFVU"
+                    src="img/roasty-bean-bag-transparentbg-1-1@2x.svg"
+                  /></div
+              ></a>
+              <div class="frame-1494-F044ji">
+                <div class="frame-1484-faxX4C"><div class="quantity-i5345515389178-pgHpU3">Quantity:</div></div>
+              </div>
+              <div class="counter-widget-F044ji">
+                <div class="frame-1489-fxg47v">
+                  <div class="frame-1480-NkOjZa">
+                    <img class="frame-1482-hIx7VY" src="img/frame-1482-1@2x.svg" />
+                    <div class="frame-1483-hIx7VY border-1px-eerie-black">
+                      <img class="union-YWHYWO" src="img/union-2@2x.svg" />
+                    </div>
+                  </div>
+                  <div class="frame-1479-NkOjZa">
+                    <img class="frame-1483-brZgMF" src="img/frame-1483-1@2x.svg" />
+                    <div class="frame-1491-brZgMF border-1px-eerie-black">
+                      <div class="x2-i5345515389190-UxUOxU">1</div>
+                    </div>
+                    <img class="frame-1482-brZgMF" src="img/frame-1482-2@2x.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="frame-1495-F044ji">
+                <div class="frame-1481-2u8HDk">
+                  <div class="group-1484-1w9FHg">
+                    <img class="ellipse-6-lr9wVm" src="img/ellipse-6@2x.svg" />
+                    <img class="ellipse-8-lr9wVm" src="img/ellipse-8@2x.svg" />
+                  </div>
+                  <div class="pickup-in-store-i5345515389511-1w9FHg">Pickup in Store</div>
+                </div>
+                <div class="frame-1482-2u8HDk">
+                  <div class="group-1483-gHfx5O">
+                    <img class="ellipse-6-J6yLar" src="img/ellipse-6@2x.svg" />
+                    <img class="ellipse-8-J6yLar" src="img/ellipse-8-1@2x.svg" />
+                  </div>
+                  <div class="delivery-i5345515389514-gHfx5O">Delivery (+$)</div>
+                </div>
+              </div>
+            </div>
+            <div class="view-cart-product-cold-brew-3wItIJ border-1-5px-ghost">
+              <div class="frame-1474-503ZDw">
+                <div class="mongolian-cold-w-i534593534510-o0lMK0 raleway-bold-black-22px">Mongolian Cold Brew</div>
+                <div class="frame-1474-o0lMK0">
+                  <div class="x3067-i534593534512-m9Ktet raleway-light-black-18px">$30.67</div>
+                  <div class="x64oz-growler-i534593534513-m9Ktet raleway-light-black-16px">64oz. Growler</div>
+                  <div class="x-pickup-only-i534593534514-m9Ktet">(Pickup Only)</div>
+                </div>
+              </div>
+              <a href="catalog-page-product-information-cold-brew.html">
+                <div class="frame-1494-503ZDw">
+                  <a href="catalog-page-product-information-cold-brew.html" onclick="window.event.stopPropagation()"
+                    ><img class="frame-1494-UvLydo" src="img/frame-1494@2x.svg"
+                  /></a>
+                  <img
+                    class="cold-brewed-coffeedscf9691-2-UvLydo"
+                    src="img/cold-brewed-coffee-dscf9691-2-3@2x.svg"
+                  /></div
+              ></a>
+              <div class="frame-1484-503ZDw">
+                <div class="frame-1484-cbH4rm"><div class="quantity-i534593534519-IMmdVJ">Quantity:</div></div>
+              </div>
+              <div class="counter-widget-503ZDw">
+                <div class="frame-1489-G9CMHx">
+                  <div class="frame-1480-24as83">
+                    <img class="frame-1482-Fbf6V5" src="img/frame-1482-1@2x.svg" />
+                    <div class="frame-1483-Fbf6V5 border-1px-eerie-black">
+                      <img class="union-8kfBUa" src="img/union-2@2x.svg" />
+                    </div>
+                  </div>
+                  <div class="frame-1479-24as83">
+                    <img class="frame-1483-avWXap" src="img/frame-1483-1@2x.svg" />
+                    <div class="frame-1491-avWXap border-1px-eerie-black">
+                      <div class="x2-i534593534527-ROqDxH">1</div>
+                    </div>
+                    <img class="frame-1482-avWXap" src="img/frame-1482-2@2x.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="frame-1485-503ZDw">
+                <div class="frame-1481-O770PF">
+                  <div class="group-1484-JWE5GE">
+                    <img class="ellipse-6-axYH5d" src="img/ellipse-6@2x.svg" />
+                    <img class="ellipse-8-axYH5d" src="img/ellipse-8@2x.svg" />
+                  </div>
+                  <div class="pickup-in-store-i534593534542-JWE5GE">Pickup in Store</div>
+                </div>
+                <div class="frame-1482-O770PF">
+                  <div class="group-1483-BaHnq8">
+                    <img class="ellipse-10-AbUSKN" src="img/ellipse-10@2x.svg" />
+                    <img class="union-AbUSKN" src="img/union-5@2x.svg" />
+                  </div>
+                  <div class="delivery-i534593534545-BaHnq8">Delivery (+$)</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-1482-3wItIJ">
+              <a href="javascript:history.back()"
+                ><img class="buttondefault-UCYn6g" src="img/button-default-2@2x.svg"
+              /></a>
+              <div class="frame-1481-UCYn6g">
+                <div class="frame-1483-CBaooc">
+                  <div class="subtotal-63ZxvN">Subtotal</div>
+                  <div class="taxes-63ZxvN">Taxes</div>
+                  <div class="total-63ZxvN raleway-bold-black-20px">Total</div>
+                </div>
+                <div class="frame-1482-CBaooc">
+                  <div class="x6067-x52oAw">$60.67</div>
+                  <div class="x125-x52oAw">$1.25</div>
+                  <div class="x6192-x52oAw raleway-bold-black-20px">$61.92</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-1487-3wItIJ">
+              <div class="frame-1474-JBGInR">
+                <a href="persponal-info.html"><img class="buttondefault-hCZy24" src="img/button-default-3@2x.svg" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-C61RwL">
+          <a href="home.html"
+            ><img class="roasty-brand-ho-kup-nopadding-1-iPe1yZ" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+          /></a>
+          <div class="frame-1460-iPe1yZ">
+            <div class="icon-venmo-M6YXpf">
+              <div class="group-nkO7wM"></div>
+            </div>
+            <div class="icon-instagram-M6YXpf"><img class="vector-vldh39" src="img/vector-1@2x.svg" /></div>
+            <div class="icon-cart-w-badge-M6YXpf">
+              <div class="cart-fxoTGM">
+                <div class="layer-33-oGP2bB">
+                  <img class="vector-BHrGN0" src="img/vector-3@2x.svg" />
+                  <img class="vector-XYf3pI" src="img/vector-2@2x.svg" />
+                </div>
+                <div class="group-1435-oGP2bB">
+                  <img class="ellipse-5-aCtXLx" src="img/ellipse-5-8@2x.svg" />
+                  <div class="x1-i5342892791898-aCtXLx valign-text-middle raleway-medium-black-14px">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-hamburger-condensed" class="overlay" style="min-height: 1493px">
+      <div class="container-center-horizontal">
+        <div class="hamburger-condensed screen">
+          <div class="frame-1535-C61RwL"><img class="menu-rDMiKW" src="img/menu@2x.svg" /></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-hamburger-condensed";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("hamburger-condensed", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
