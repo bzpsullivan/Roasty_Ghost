@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/catalog-page-product-information-beans.css" />
+    <link rel="stylesheet" type="text/css" href="css/item-added-system-message-product-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabbed-browsing-beans.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-condensed.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway:300,600,700,900,400,500|Londrina+Solid:400");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(248, 248, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="catalog-page-product-information-beans" />
+    <div class="container-center-horizontal">
+      <div class="catalog-page-product-information-beans screen">
+        <img class="coffeering-1-C61RwL" src="img/coffeering-1@2x.svg" />
+        <div class="frame-1482-C61RwL">
+          <div class="frame-1526-yWe1TV">
+            <a href="javascript:ShowOverlay('tabbed-browsing-beans', 'animate-appear');">
+              <div class="hamburgeritem-dkMEuI">
+                <div class="our-offerings-5Q347S raleway-bold-black-22px">OUR OFFERINGS</div>
+                <div class="group-1420-5Q347S">
+                  <img class="polygon-10-JX9xUd" src="img/polygon-10-3@2x.svg" />
+                </div></div
+            ></a>
+          </div>
+          <div class="frame-1493-yWe1TV">
+            <a href="javascript:history.back()">
+              <div class="frame-1488-fGO2oI">
+                <img class="vector-j8AKJ1" src="img/vector-6@2x.svg" />
+                <div class="back-j8AKJ1 raleway-semi-bold-eerie-black-14px">Back</div>
+              </div></a
+            >
+            <div class="product-details-fGO2oI valign-text-middle raleway-bold-black-22px">Product Details</div>
+          </div>
+          <div class="card-product-details-beans-yWe1TV border-1-5px-ghost">
+            <div class="frame-1474-qOEoSJ">
+              <div class="frame-1479-J2fvQb">
+                <div class="columbian-blend-i5388643505354-aUfyyk raleway-bold-black-22px">
+                  Columbian Blend <br />Roast Beans
+                </div>
+              </div>
+              <div class="frame-1474-J2fvQb">
+                <div class="x2067-i5388643505356-F6kPKz raleway-light-black-18px">$20.67</div>
+                <div class="x12oz-bag-i5388643505357-F6kPKz raleway-light-black-16px">12oz. Bag</div>
+                <div class="pickup-only-i5388643505358-F6kPKz">Pickup Only</div>
+              </div>
+            </div>
+            <div class="frame-1492-qOEoSJ">
+              <img class="roasty-bean-bag-transparentbg-1-WUtInr" src="img/roasty-bean-bag-transparentbg-1@2x.svg" />
+            </div>
+            <div class="frame-1540-qOEoSJ">
+              <div class="origins-eastern-i5388643505361-VxGKFN raleway-bold-black-20px">
+                <span class="span0-RpmY5J">Origins: </span><span class="span1-RpmY5J">Eastern Region of Mongolia</span>
+              </div>
+            </div>
+            <div class="frame-1530-qOEoSJ">
+              <div class="frame-1489-pZL9Ls">
+                <div class="tasting-notes-i5388643505364-6Br9AI raleway-bold-black-20px">Tasting Notes:</div>
+              </div>
+              <div class="frame-1489-YysbZi">
+                <div class="frame-1507-w4ABK7">
+                  <div class="frame-1529-1ibuxn"><img class="boots-DCIanL" src="img/boots@2x.svg" /></div>
+                  <div class="shoe-leather-i5388643505369-1ibuxn">Shoe Leather</div>
+                </div>
+                <div class="frame-1489-w4ABK7">
+                  <div class="frame-1528-dnKxw0"></div>
+                  <div class="chocolate-i5388643505372-dnKxw0">Chocolate</div>
+                </div>
+                <div class="frame-1505-w4ABK7">
+                  <div class="frame-1529-0Lgee1"><img class="plum-SS2ETR" src="img/plum@2x.svg" /></div>
+                  <div class="stone-fruit-i5388643505376-0Lgee1">Stone Fruit</div>
+                </div>
+                <div class="frame-1508-w4ABK7">
+                  <div class="frame-1529-IFmDwH">
+                    <div class="frame-1486-pzKWhC">
+                      <div class="frame-Ukhkq5">
+                        <img class="vector-Ea3M8o" src="img/vector-15@2x.svg" />
+                        <img class="vector-E6MydL" src="img/vector-16@2x.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="full-bodied-i5388643505383-IFmDwH">Full Bodied</div>
+                </div>
+              </div>
+            </div>
+            <div class="description-thi-i5388643505384-qOEoSJ raleway-bold-black-20px">
+              <span class="span0-R7YZTw">Description:</span
+              ><span class="span1-R7YZTw">
+                This is a natural processed coffee that, as a cold brew, shines with juicy fruit flavors<br /><br />This
+                is a complex and lively cold brew, designed to be a sessionable with great flavors of peach, Meyer
+                lemon, and a juicy body.</span
+              >
+            </div>
+            <div class="dialog-add-to-cart-horiz-qOEoSJ">
+              <div class="frame-1482-SnGHpu">
+                <div class="quantity-i5388643505387-wr0Lqd raleway-medium-eerie-black-20px">Quantity:</div>
+                <div class="pickup-only-i5388643505388-wr0Lqd">Pickup Only</div>
+              </div>
+              <div class="frame-1484-SnGHpu">
+                <div class="buttondefault-HKdMtx">
+                  <div class="frame-1479-LaGtkb">
+                    <img class="frame-1483-503lsD" src="img/frame-1483@2x.svg" />
+                    <div class="frame-1491-503lsD border-1px-eerie-black">
+                      <div class="x1-i5388643505397-1nKbPf">1</div>
+                    </div>
+                    <img class="frame-1482-503lsD" src="img/frame-1482@2x.svg" />
+                  </div>
+                </div>
+                <a href="javascript:ShowOverlay('item-added-system-message-product-page', 'animate-appear');">
+                  <div class="buttondefault-zj44tZ">
+                    <div class="add-to-cart-i5388643505403-k64EFK raleway-medium-eerie-black-20px">Add to Cart</div>
+                    <div class="icon-cart-add-k64EFK">
+                      <div class="cart-qGdlNi">
+                        <div class="layer-33-Ha106c">
+                          <img class="vector-XATGb5" src="img/vector-32@2x.svg" />
+                          <img class="vector-40Hgy6" src="img/vector-33@2x.svg" />
+                        </div>
+                        <div class="group-1435-Ha106c">
+                          <img class="ellipse-5-qzhQly" src="img/ellipse-5-5@2x.svg" />
+                          <div class="x-i53886435054043021650-qzhQly valign-text-middle">+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="frame-1522-yWe1TV">
+            <a href="javascript:history.back()">
+              <div class="frame-1487-qd9eIv">
+                <img class="vector-pBhPza" src="img/vector-6@2x.svg" />
+                <div class="back-pBhPza raleway-semi-bold-eerie-black-14px">Back</div>
+              </div></a
+            >
+            <a href="view-cart.html">
+              <div class="frame-1488-qd9eIv">
+                <div class="view-cart-QGEcrQ raleway-semi-bold-eerie-black-14px">View Cart</div>
+                <div class="cart-QGEcrQ">
+                  <div class="layer-33-AzDKir">
+                    <img class="vector-ZKBIRE" src="img/vector-36@2x.svg" />
+                    <img class="vector-1T3kR0" src="img/vector-37@2x.svg" />
+                  </div>
+                </div></div
+            ></a>
+          </div>
+        </div>
+        <div class="footer-C61RwL">
+          <a href="home.html"
+            ><img class="roasty-brand-ho-kup-nopadding-1-iPe1yZ" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+          /></a>
+          <div class="frame-1460-iPe1yZ">
+            <div class="icon-venmo-M6YXpf">
+              <div class="group-nkO7wM"></div>
+            </div>
+            <div class="icon-instagram-M6YXpf"><img class="vector-vldh39" src="img/vector-1@2x.svg" /></div>
+            <a href="view-cart.html">
+              <div class="icon-cart-w-badge-M6YXpf">
+                <div class="cart-fxoTGM">
+                  <div class="layer-33-oGP2bB">
+                    <img class="vector-BHrGN0" src="img/vector-2@2x.svg" />
+                    <img class="vector-XYf3pI" src="img/vector-3@2x.svg" />
+                  </div>
+                  <div class="group-1435-oGP2bB">
+                    <img class="ellipse-5-aCtXLx" src="img/ellipse-5@2x.svg" />
+                    <div class="x1-i5054182791898-aCtXLx valign-text-middle raleway-medium-black-14px">1</div>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="system-header-with-header-C61RwL">
+          <div class="header-Ma42xY">
+            <a href="home.html"
+              ><img class="roasty-brand-ho-kup-nopadding-1-VdxkZe" src="img/roastybrandhorizlockupnopadding-1@2x.svg"
+            /></a>
+            <div class="frame-1456-VdxkZe">
+              <a href="view-cart.html">
+                <div class="icon-cart-w-badge-pNe5tj">
+                  <div class="group-1462-jwfCD7">
+                    <div class="cart-GzNxBq">
+                      <div class="layer-33-PAkmb8">
+                        <img class="vector-P4Wcuk" src="img/vector-29@2x.svg" />
+                        <img class="vector-bSH92j" src="img/vector-30@2x.svg" />
+                      </div>
+                      <div class="group-1435-PAkmb8">
+                        <img class="ellipse-5-Z9K9Zx" src="img/ellipse-5-4@2x.svg" />
+                        <div class="x0-i50541937683832791809-Z9K9Zx valign-text-middle raleway-medium-black-14px">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="javascript:ShowOverlay('hamburger-condensed', 'animate-appear');">
+                <div class="hamurger-menu-pNe5tj"><img class="union-Vl0mgO" src="img/union-4@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-tabbed-browsing-beans" class="overlay" style="min-height: 1243px">
+      <div class="container-center-horizontal">
+        <div
+          class="tabbed-browsing-beans screen"
+          onclick="window.open('javascript:HideOverlay(%27tabbed-browsing-beans%27%2C%20%27animate-disappear%27);', '_self');"
+        >
+          <div class="frame-1525-C61RwL">
+            <div class="hamburgeritem-iaOJTp">
+              <div class="our-offerings-UUN0E0 raleway-bold-black-22px">OUR OFFERINGS</div>
+              <a
+                href="javascript:ShowOverlay('tabbed-browsing-beans', 'animate-appear');"
+                onclick="window.event.stopPropagation()"
+              >
+                <div class="group-1420-UUN0E0"><img class="polygon-10-2wyYJu" src="img/polygon-10@2x.svg" /></div
+              ></a>
+            </div>
+          </div>
+          <div class="frame-1531-C61RwL">
+            <div class="frame-1476-Swjalx">
+              <a onclick="window.event.stopPropagation()">
+                <div class="tabdefault-w75i9w">
+                  <div class="beans-i53419252998-2t0yt9 valign-text-middle">Beans</div>
+                </div></a
+              >
+              <a onclick="window.event.stopPropagation()">
+                <div class="tabfocused-w75i9w">
+                  <div class="cold-brew-i53419263372537-DpzIGB valign-text-middle raleway-medium-eerie-black-20px">
+                    Cold Brew
+                  </div>
+                </div></a
+              >
+              <a onclick="window.event.stopPropagation()">
+                <div class="tabdefault-yGAzmb">
+                  <div class="beans-i53419272998-2onjXU valign-text-middle raleway-medium-eerie-black-20px">
+                    Subscription
+                  </div>
+                </div></a
+              >
+              <a href="catalog-page-merch.html" onclick="window.event.stopPropagation()">
+                <div class="tabdefault-qBAbfQ">
+                  <div class="beans-i53419282998-VbW3Xs valign-text-middle raleway-medium-eerie-black-20px">Merch.</div>
+                </div></a
+              >
+              <a href="catalog-page-all.html" onclick="window.event.stopPropagation()">
+                <div class="tabdefault-PIw5MF">
+                  <div class="beans-i53419292998-fxQQJw valign-text-middle raleway-medium-eerie-black-20px">All</div>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-tabbed-browsing-beans";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("tabbed-browsing-beans", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <div id="overlay-hamburger-condensed" class="overlay" style="min-height: 1243px">
+      <div class="container-center-horizontal">
+        <div class="hamburger-condensed screen">
+          <div class="frame-1535-C61RwL"><img class="menu-rDMiKW" src="img/menu@2x.svg" /></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-hamburger-condensed";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("hamburger-condensed", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <div id="overlay-item-added-system-message-product-page" class="overlay" style="min-height: 1243px">
+      <div class="container-center-horizontal">
+        <div
+          class="item-added-system-message-product-page screen"
+          onclick="window.open('javascript:HideOverlay(%27item-added-system-message-product-page%27%2C%20%27animate-disappear%27);', '_self');"
+        >
+          <img class="item-added-system-message-C61RwL" src="img/item-added-system-message-1@2x.svg" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-item-added-system-message-product-page";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var overlayElement = document.getElementById(overlay_id);
+          var clickedDiv = e.toElement || e.target;
+          if (overlayElement.contains(clickedDiv)) {
+            HideOverlay("item-added-system-message-product-page", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
